@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Childhood Pictures</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 15%;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: 10px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.menu-bar1{
+	background: #11B674;
+	text-align: right;
+	border: 20px;
+	opacity:.8;
+	border-bottom: 1px solid black;
+	transition: 0.4s ease;
+} 
+.menu-bar1 ul{
+	display: inline-flex;
+	list-style: none;
+
+}
+.menu-bar1 ul li{
+	width: 200px;
+	margin: 10px;
+	padding: 15px;
+	text-align: center;
+	transition: 0.4s ease;
+	margin-bottom: 0;
+}
+.menu-bar1 ul li:last-child{
+	margin-right: 30px;
+}
+.menu-bar1 ul li a{
+	text-decoration: none;
+	color: black; 
+}
+.active1, .menu-bar1 ul li:hover{
+	background: #fff;
+	border-radius: 3px;
+}
+.sub-menu{
+	display: none;
+}
+.menu-bar1 ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	background: white;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.menu-bar1 ul li:hover .sub-menu ul{
+	display: block;
+	margin: 10px;
+}
+.menu-bar1 ul li:hover .sub-menu ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #000;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar1 ul li:hover .sub-menu ul li:last-child{
+	border-bottom: none;
+}
+.menu-bar1 ul li:hover .sub-menu ul li a:hover{
+	color: #2bab0d;
+	border-radius: 3px;
+}
+.leftmenu{
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+
+}
+.column:hover {
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	}
+header{
+	padding: 20px;
+	font-size: 35px;
+	}
+</style>
+</head>
+<body>
+<div class="menu-bar1">
+<ul>
+	<li class="active1"><a href="C:\Users\Andrew Cempron\Documents\MIDTERM PROJECT\gal.html"><b>My Gallery</b></a>
+	</li>
+	<li><a href="C:\Users\Andrew Cempron\Documents\MIDTERM PROJECT\Family\family.html">Family Pictures</a></li>
+	<li><a href="C:\Users\Andrew Cempron\Documents\MIDTERM PROJECT\Childhood\child.html">Childhood Pictures</a></li>
+	<li><a href="C:\Users\Andrew Cempron\Documents\MIDTERM PROJECT\Friends\random.html">With Friends</a></li>
+</ul>
+		<div class="leftmenu">
+		<img src="logo.jpg" style = "width:70px;height:50px;">
+	<img src="tacg.jpg" style = "width:200px;height:40px;">
+		</div>
+	</div>
+<header>
+<h2 style="text-align:center">Pictures with Friends</h2>
+</header>
+<div class="row">
+  <div class="column">
+    <img src="mdc4.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="bling9.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="mdc3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="kya1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="lesm1.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="imok.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="spa1.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="kya.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="mdc1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="bling.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="mdc4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="bling9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="mdc3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="kya1.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="lesm1.jpg" style="width:100%">
+    </div>
+    
+	<div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="imok.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="spa1.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="kya.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="mdc1.jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="bling.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>

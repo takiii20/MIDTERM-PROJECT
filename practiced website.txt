@@ -1,0 +1,138 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background-color: #11B674;
+	font-family: sans-serif;
+
+}
+.menu-bar{
+	background: #fff;
+	text-align: right;
+	border: 1px solid black;
+}
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+
+}
+.menu-bar ul li{
+	float: right;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	margin: 10px;
+/*
+	width: 120px;
+	margin: 10px;
+	padding: 15px;
+*/
+}
+.menu-bar ul li a{
+	text-decoration: none;
+	color: black;
+}
+.active, .menu-bar ul li:hover{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.sub-menu{
+		display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	background: white;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu ul{
+	display: block;
+	margin: 10px;
+}
+.leftmenu{
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+
+}
+header{
+	background:#fff;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 50px;
+	font-family: Freestyle Script;
+	margin: 20px;
+	color: blue;
+}
+section{
+	margin:20px;
+	float: right;
+	width: 45%;
+}
+article{
+	float:left;
+	background-color: #e8fff4;
+	width: 55%;
+}
+footer{
+	float:bottom;
+} 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Personal Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="menu-bar">
+<ul>
+	<li class="active"><a href="#">Home</a></li>
+	<li><a href="#">About Me</a></li>
+	<li><a href="#">My Gallery</a>
+		<div class="sub-menu">
+			<ul>
+				<li><a href="#">Family Pictures</a></li>
+				<li><a href="#">Childhood Pictures</a></li>
+				<li><a href="#">Random Pictures</a></li>
+			</ul>
+		</div>
+	</li>
+</ul>
+		<div class="leftmenu">
+		<img src="lgo.jpg" style = "width:70px;height:50px;">
+	<img src="tac.png" style = "width:200px;height:50px;">
+		</div>
+	</div>
+<header>
+	<p></p>
+	<h1>You are capable of doing AMAZING things</h1>
+</header>
+<section>
+<center>
+<img src="a.jpg" style="width:300px;height:300px;"</td>
+</center>
+</section>
+<article>
+	<h1>Welcome to my Personal Website</h1>
+	<p>My name is Trisha Ann Cempron, get to know me as you visit my website. In this website you will know my personal
+		information, my achievements, and a gallery of pictures from my childhood, family pictures and random pictures 
+		with my classmates and friends.
+	</p>
+</article>
+
+
+
+
+</body>
+</html>
